@@ -2,16 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-:root {
-    --base-color: rgb(239, 68, 68);
-    --base-color-light: rgba(239, 68, 68, 0.2);
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-::-moz-selection {
-    /* Code for Firefox */
-    background: var(--base-color-light);
-}
-
-::selection {
-    background: var(--base-color-light);
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
