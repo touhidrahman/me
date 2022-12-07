@@ -8,9 +8,7 @@
             "path": ".cache",
             "environment": "all"
         },
-        "schematicCollections": [
-          "@angular-eslint/schematics"
-        ],
+        "schematicCollections": ["@angular-eslint/schematics"],
         "analytics": false
     },
     "projects": {
@@ -128,6 +126,12 @@
         },
         "@schematics/angular:guard": {
             "skipTests": true
+        },
+        "@angular-eslint/schematics:application": {
+            "setParserOptionsProject": true
+        },
+        "@angular-eslint/schematics:library": {
+            "setParserOptionsProject": true
         }
     }
 }
