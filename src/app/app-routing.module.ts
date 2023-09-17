@@ -11,6 +11,11 @@ export const routes: Routes = [
         pathMatch: 'full',
     },
     {
+        path: 'emergency',
+        loadComponent: () =>
+            import('./pages/emergency-page/emergency-page.component').then((m) => m.EmergencyPageComponent),
+    },
+    {
         path: '**',
         loadComponent: () =>
             import('./pages/not-found-page/not-found-page.component').then((m) => m.NotFoundPageComponent),
