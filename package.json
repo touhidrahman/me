@@ -71,5 +71,8 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
