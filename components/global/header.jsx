@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import PrimaryButton from "./primaryButton";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,11 +39,8 @@ export default function Header() {
             Resume
           </button>
 
-          <Link
-            href="#"
-            className="px-4 py-2 bg-secondary rounded-sm text-white hover:bg-primary hover:text-secondary duration-300"
-          >
-            Contact
+          <Link href="/#contact" className="">
+            <PrimaryButton>Contact</PrimaryButton>
           </Link>
         </div>
 

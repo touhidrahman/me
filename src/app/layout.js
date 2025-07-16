@@ -1,6 +1,7 @@
 import { Montserrat, Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../../components/global/header";
+import Footer from "../../components/footer";
 
 // Load all fonts with `variable` to use with Tailwind
 const montserrat = Montserrat({
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
