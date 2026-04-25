@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { experience } from "../utils/data/experience";
+import { experience } from "../utils/data/experience.js";
 
 export default function ExperienceSection() {
   const [showAll, setShowAll] = useState(false);
@@ -10,7 +10,7 @@ export default function ExperienceSection() {
   const visibleExperiences = showAll ? experience : experience.slice(0, 3);
 
   return (
-    <section className="bg-white py-16 sm:py-24 md:py-28">
+    <section id="experience" className="bg-white py-16 sm:py-24 md:py-28">
       <div className="container-default">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold font-inter text-center mb-4">

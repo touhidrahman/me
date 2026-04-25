@@ -5,6 +5,14 @@ import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import PrimaryButton from "./primaryButton";
+import { personal } from "../../utils/data/personal";
+
+const navLinks = [
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Blog", href: "/blog" },
+];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +20,9 @@ export default function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const handleResume = () => {
-    window.open("/files/Touhid-Rahman.pdf", "_blank");
+
+  const closeMobileMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -22,24 +31,34 @@ export default function Header() {
         <Link
           href={"/"}
           className="rounded-full bg-black text-white font-bold px-1.5"
+          aria-label="Go to homepage"
         >
-          A
+          T
         </Link>
-        <h3 className="text-lg font-semibold">Touhid Rahman</h3>
+        <Link href="/" className="text-lg font-semibold hover:opacity-80 duration-200">
+          {personal.name}
+        </Link>
       </div>
-      <nav className="">
+      <nav aria-label="Main navigation">
         <div className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="/blog" className=" hover:underline duration-300">
-            Blog
-          </Link>
-          <button
-            onClick={handleResume}
-            className="hover:underline cursor-pointer duration-300"
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="hover:text-secondary duration-300"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <a
+            href={personal.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-secondary duration-300"
           >
             Resume
-          </button>
-
-          <Link href="/#contact" className="">
+          </a>
+          <Link href="/#contact">
             <PrimaryButton>Contact</PrimaryButton>
           </Link>
         </div>
@@ -47,32 +66,45 @@ export default function Header() {
         <button
           onClick={toggleMenu}
           className="md:hidden block pr-2 text-black font-bold text-2xl"
+          aria-label="Open navigation menu"
+          aria-expanded={isOpen}
         >
           <HiMenuAlt3 />
         </button>
 
         {isOpen && (
-          <div className="fixed top-0 right-0 w-4/5 h-full bg-light p-4 md:hidden z-50 backdrop-blur-lg">
+          <div className="fixed top-0 right-0 w-4/5 h-full bg-light p-4 md:hidden z-50 shadow-2xl">
             <button
-              onClick={toggleMenu}
+              onClick={closeMobileMenu}
               className="absolute top-4 right-4 text-black text-2xl"
+              aria-label="Close navigation menu"
             >
               <IoMdCloseCircleOutline />
             </button>
-            <div className="flex flex-col px-8 items-start space-y-4 mt-10 text-sm">
-              <Link href="/blog" className=" hover:underline">
-                Blog
-              </Link>
-              <button
-                onClick={handleResume}
-                className="hover:underline cursor-pointer"
+            <div className="flex flex-col px-8 items-start space-y-6 mt-16 text-sm">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="hover:text-secondary duration-300 text-base"
+                  onClick={closeMobileMenu}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <a
+                href={personal.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-secondary duration-300 text-base"
+                onClick={closeMobileMenu}
               >
                 Resume
-              </button>
-
+              </a>
               <Link
-                href="#"
+                href="/#contact"
                 className="px-4 py-2 bg-secondary rounded-md text-white"
+                onClick={closeMobileMenu}
               >
                 Contact
               </Link>
@@ -81,10 +113,10 @@ export default function Header() {
         )}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black opacity-50 md:hidden z-0"
-            style={{ width: "20%" }}
+            className="fixed inset-0 bg-black/50 md:hidden z-40"
             onClick={toggleMenu}
-          ></div>
+            aria-hidden="true"
+          />
         )}
       </nav>
     </header>
