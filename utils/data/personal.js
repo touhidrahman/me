@@ -18,7 +18,8 @@ export const personal = {
   social: {
     github: "https://github.com/touhidrahman",
     linkedin: "https://www.linkedin.com/in/touhidrahman",
-    facebook: "https://www.facebook.com/",
-    behance: "https://www.behance.com/",
+    // Update the URLs below with your actual profile pages, or set to null to hide
+    facebook: null,
+    behance: null,
   },
 };

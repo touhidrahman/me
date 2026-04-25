@@ -16,20 +16,20 @@ export const certifications = [
     title: "Angular — The Complete Guide",
     issuer: "Udemy",
     year: "2022",
-    url: "#",
+    url: null,
   },
   {
     id: 2,
     title: "Node.js, Express, MongoDB & More: The Complete Bootcamp",
     issuer: "Udemy",
     year: "2021",
-    url: "#",
+    url: null,
   },
   {
     id: 3,
     title: "Docker & Kubernetes: The Practical Guide",
     issuer: "Udemy",
     year: "2023",
-    url: "#",
+    url: null,
   },
 ];

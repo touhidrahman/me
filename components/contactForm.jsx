@@ -94,15 +94,17 @@ export default function ContactForm() {
 
         {/* Social Icons */}
         <div className="flex space-x-4 items-center py-4">
-          <Link
-            href={personal.social.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 bg-secondary text-white text-xl rounded-md hover:bg-secondary/80 duration-200"
-            aria-label="Facebook"
-          >
-            <FaFacebookF />
-          </Link>
+          {personal.social.facebook && (
+            <Link
+              href={personal.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-secondary text-white text-xl rounded-md hover:bg-secondary/80 duration-200"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </Link>
+          )}
 
           <Link
             href={personal.social.github}
@@ -124,15 +126,17 @@ export default function ContactForm() {
             <FaLinkedinIn />
           </Link>
 
-          <Link
-            href={personal.social.behance}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-secondary text-xl hover:text-secondary/70 duration-200"
-            aria-label="Behance"
-          >
-            <FaBehance />
-          </Link>
+          {personal.social.behance && (
+            <Link
+              href={personal.social.behance}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary text-xl hover:text-secondary/70 duration-200"
+              aria-label="Behance"
+            >
+              <FaBehance />
+            </Link>
+          )}
         </div>
       </div>
 

@@ -59,15 +59,17 @@ export default function Footer() {
               >
                 <FaLinkedinIn />
               </Link>
-              <Link
-                href={personal.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-secondary duration-200 text-xl"
-                aria-label="Facebook"
-              >
-                <FaFacebookF />
-              </Link>
+              {personal.social.facebook && (
+                <Link
+                  href={personal.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-secondary duration-200 text-xl"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF />
+                </Link>
+              )}
             </div>
             <p className="text-sm text-gray-400">
               Copyright &copy; {currentYear} {personal.name}. All rights reserved.

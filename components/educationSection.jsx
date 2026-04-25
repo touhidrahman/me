@@ -60,9 +60,20 @@ export default function EducationSection() {
                     <FaCertificate aria-hidden="true" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-gray-900 text-sm mb-0.5">
-                      {cert.title}
-                    </h4>
+                    {cert.url ? (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-gray-900 text-sm mb-0.5 hover:text-secondary duration-200"
+                      >
+                        {cert.title}
+                      </a>
+                    ) : (
+                      <h4 className="font-semibold text-gray-900 text-sm mb-0.5">
+                        {cert.title}
+                      </h4>
+                    )}
                     <div className="flex items-center gap-2 text-xs text-gray-500">
                       <span>{cert.issuer}</span>
                       <span>·</span>
@@ -71,10 +82,6 @@ export default function EducationSection() {
                   </div>
                 </div>
               ))}
-              <p className="text-xs text-gray-400 pt-2 italic">
-                * Certification details available upon request. Update URLs in{" "}
-                <code className="bg-gray-100 px-1 rounded">utils/data/education.js</code>
-              </p>
             </div>
           </div>
         </div>

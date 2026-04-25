@@ -31,7 +31,7 @@ export default function Header() {
         <Link
           href={"/"}
           className="rounded-full bg-black text-white font-bold px-1.5"
-          aria-label="Go to homepage"
+          aria-label={`${personal.name} — Go to homepage`}
         >
           T
         </Link>
