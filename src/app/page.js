@@ -5,19 +5,23 @@ import DevelopmentTools from "../../components/developmentTools";
 import WorkTogether from "../../components/workTogether";
 import ExperienceSection from "../../components/experienceSection";
 import WhatIDoSection from "../../components/whatIDoSection";
+import ProjectsSection from "../../components/projectsSection";
+import EducationSection from "../../components/educationSection";
 import ContactForm from "../../components/contactForm";
 
 export default function Home() {
   return (
-    <div className="">
+    <main>
       <HeroSection />
       <ProfileOverview />
       <WorkProcess />
       <DevelopmentTools />
-      <WorkTogether />
-      <ExperienceSection />
       <WhatIDoSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <EducationSection />
+      <WorkTogether />
       <ContactForm />
-    </div>
+    </main>
   );
 }
