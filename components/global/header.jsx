@@ -42,7 +42,7 @@ export default function Header() {
         </Link>
       </div>
       <nav aria-label="Main navigation">
-        <div className="hidden md:flex items-center gap-6 text-sm">
+        <div className="hidden lg:flex items-center gap-6 text-sm">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -75,7 +75,7 @@ export default function Header() {
 
         <button
           onClick={toggleMenu}
-          className="md:hidden block pr-2 text-black font-bold text-2xl"
+          className="lg:hidden block pr-2 text-black font-bold text-2xl"
           aria-label="Open navigation menu"
           aria-expanded={isOpen}
         >
@@ -83,7 +83,7 @@ export default function Header() {
         </button>
 
         {isOpen && (
-          <div className="fixed top-0 right-0 w-4/5 h-full bg-light p-4 md:hidden z-50 shadow-2xl">
+          <div className="fixed top-0 right-0 w-4/5 h-full bg-light p-4 lg:hidden z-50 shadow-2xl">
             <button
               onClick={closeMobileMenu}
               className="absolute top-4 right-4 text-black text-2xl"
@@ -132,7 +132,7 @@ export default function Header() {
         )}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/50 md:hidden z-40"
+            className="fixed inset-0 bg-black/50 lg:hidden z-40"
             onClick={toggleMenu}
             aria-hidden="true"
           />

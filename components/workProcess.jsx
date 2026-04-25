@@ -40,7 +40,7 @@ const steps = [
 
 function StepCard({ step }) {
   return (
-    <div className="rounded-xl bg-white p-4 shadow-md transition hover:shadow-lg h-48">
+    <div className="rounded-xl bg-white p-4 shadow-md transition hover:shadow-lg min-h-48 h-auto">
       <div className="mb-4 inline-block rounded-md bg-primary p-3">
         {step.icon}
       </div>

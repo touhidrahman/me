@@ -26,6 +26,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://touhidrahman.me"),
   title: {
     default: "Touhid Rahman — Fullstack Developer",
     template: "%s | Touhid Rahman",

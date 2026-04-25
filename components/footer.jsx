@@ -23,7 +23,7 @@ export default function Footer() {
 
           <nav
             aria-label="Footer navigation"
-            className="flex items-center gap-6 text-sm text-center justify-center"
+            className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-center justify-center max-w-sm"
           >
             <Link href="/#about" className="hover:text-secondary duration-300">
               About

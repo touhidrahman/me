@@ -37,21 +37,24 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row bg-white shadow-[0_12px_30px_rgba(0,0,0,0.1)] rounded-xl p-6 md:p-12 w-full md:max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto mt-10 translate-y-16"
+      className="flex flex-col lg:flex-row bg-white shadow-[0_12px_30px_rgba(0,0,0,0.1)] rounded-xl p-6 md:p-8 lg:p-12 w-full lg:max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto mt-10 translate-y-16"
     >
       {/* Left Side */}
-      <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+      <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Let&apos;s discuss your Project
         </h2>
         <p className="text-gray-400 mb-8 text-sm">
-          Get in touch — I&apos;d love to collaborate on your next big idea or answer
-          any questions you may have.
+          Get in touch — I&apos;d love to collaborate on your next big idea or
+          answer any questions you may have.
         </p>
 
         {/* Address */}
         <div className="inline-flex p-4 rounded-md shadow-md mb-4 items-start bg-white">
-          <div className="bg-secondary text-xl text-white p-2 rounded mr-4" aria-hidden="true">
+          <div
+            className="bg-secondary text-xl text-white p-2 rounded mr-4"
+            aria-hidden="true"
+          >
             <IoLocationOutline />
           </div>
           <div>
@@ -62,7 +65,10 @@ export default function ContactForm() {
 
         {/* Email */}
         <div className="flex items-center mb-4 pl-0 sm:pl-4 py-4">
-          <div className="bg-primary p-2 rounded mr-4 text-gray-600" aria-hidden="true">
+          <div
+            className="bg-primary p-2 rounded mr-4 text-gray-600"
+            aria-hidden="true"
+          >
             <MdOutlineMail />
           </div>
           <div>
@@ -78,7 +84,10 @@ export default function ContactForm() {
 
         {/* Phone */}
         <div className="flex items-center mb-8 pl-0 sm:pl-4">
-          <div className="bg-green-100 p-2 rounded mr-4 text-gray-600" aria-hidden="true">
+          <div
+            className="bg-green-100 p-2 rounded mr-4 text-gray-600"
+            aria-hidden="true"
+          >
             <FaPhoneAlt />
           </div>
           <div>
@@ -141,20 +150,21 @@ export default function ContactForm() {
       </div>
 
       {/* Right Side Form */}
-      <div className="md:w-1/2">
+      <div className="lg:w-1/2">
         {submitted ? (
           <div className="flex flex-col items-center justify-center h-full text-center py-12">
             <div className="text-5xl text-secondary mb-4">✓</div>
             <h3 className="text-xl font-semibold mb-2">Message sent!</h3>
             <p className="text-gray-500 text-sm">
-              Your email client should have opened. I&apos;ll get back to you soon.
+              Your email client should have opened. I&apos;ll get back to you
+              soon.
             </p>
           </div>
         ) : (
           <>
             <p className="text-gray-400 text-sm mb-4">
-              Ready to start your project? Share the details below and I&apos;ll get back
-              to you soon!
+              Ready to start your project? Share the details below and I&apos;ll
+              get back to you soon!
             </p>
             <form className="space-y-4 text-sm" onSubmit={handleSubmit}>
               <input
