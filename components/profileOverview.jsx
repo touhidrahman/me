@@ -21,7 +21,7 @@ export default function ProfileOverview() {
 
           <section className="md:w-1/2">
             <h2 className="text-xl sm:text-2xl xl:text-3xl font-bold">
-              I am a Professional Fullstack Web Developer
+              I am a Professional Fullstack Developer
             </h2>
             <p className="py-4 text-xs xl:text-sm text-gray-700 leading-relaxed">
               {personal.bio}

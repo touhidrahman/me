@@ -7,7 +7,7 @@ export default function EducationSection() {
     <section id="education" className="py-16 sm:py-24 bg-white">
       <div className="container-default">
         <h2 className="text-3xl md:text-4xl font-semibold font-inter text-center mb-12">
-          Education &amp; Certifications
+          Education &amp; Additional Information
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -25,18 +25,29 @@ export default function EducationSection() {
                   key={edu.id}
                   className="bg-surface rounded-xl p-6 border-l-4 border-secondary"
                 >
-                  <h4 className="font-bold text-gray-900 mb-1">{edu.degree}</h4>
-                  <p className="text-secondary text-sm font-medium mb-1">
-                    {edu.institution}
-                  </p>
-                  <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
-                    <span>{edu.location}</span>
-                    <span>·</span>
-                    <span>{edu.duration}</span>
+                  <h4 className="font-bold text-gray-900 mb-3">{edu.degree}</h4>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                    <p className="text-secondary text-sm font-medium">
+                      {edu.institution}
+                    </p>
+                    <span className="text-xs text-gray-500">
+                      {edu.duration}
+                    </span>
                   </div>
+                  <p className="text-xs text-gray-500 mb-3">{edu.location}</p>
                   <p className="text-xs text-gray-600 leading-relaxed">
                     {edu.description}
                   </p>
+                  {edu.link && (
+                    <a
+                      href={edu.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-3 text-xs text-secondary hover:underline"
+                    >
+                      View research project
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -48,7 +59,9 @@ export default function EducationSection() {
               <div className="bg-primary p-2 rounded-md text-secondary text-xl">
                 <FaCertificate aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Certifications</h3>
+              <h3 className="text-xl font-semibold text-gray-900">
+                Awards &amp; Additional Info
+              </h3>
             </div>
             <div className="space-y-4">
               {certifications.map((cert) => (

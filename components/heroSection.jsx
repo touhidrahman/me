@@ -49,7 +49,7 @@ export default function HeroSection() {
       <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end pb-8 md:pb-0">
         <Image
           src="/img/Touhid_Rahman-01-AI.png"
-          alt="Touhid Rahman — Expert Fullstack Developer"
+          alt="Touhid Rahman — Fullstack Developer"
           width={500}
           height={400}
           priority

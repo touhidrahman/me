@@ -27,22 +27,23 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: "Touhid Rahman — Expert Fullstack Developer",
+    default: "Touhid Rahman — Fullstack Developer",
     template: "%s | Touhid Rahman",
   },
   description:
-    "Expert Fullstack Developer with 7+ years of experience in Angular, TypeScript, Node.js, AI integration, and cloud deployment. Building high-performance web applications for enterprises worldwide.",
+    "Fullstack Developer with 8+ years of experience delivering scalable SaaS and enterprise web applications using TypeScript, Node.js, and Angular.",
   keywords: [
     "Touhid Rahman",
     "Fullstack Developer",
+    "Frontend Developer",
     "Angular Developer",
-    "TypeScript",
-    "Node.js",
+    "TypeScript Developer",
+    "Node.js Developer",
+    "Angular Developer",
     "Next.js",
     "Web Developer",
-    "Frontend Developer",
     "Software Engineer",
-    "Manchester NH",
+    "Nashua NH",
   ],
   authors: [{ name: "Touhid Rahman", url: "https://touhidrahman.me" }],
   creator: "Touhid Rahman",
@@ -50,24 +51,24 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://touhidrahman.me",
-    title: "Touhid Rahman — Expert Fullstack Developer",
+    title: "Touhid Rahman — Fullstack Developer",
     description:
-      "Expert Fullstack Developer with 7+ years of experience in Angular, TypeScript, Node.js, AI integration, and cloud deployment.",
+      "Fullstack Developer with 8+ years of experience in TypeScript, Node.js, Angular, real-time systems, and AI-assisted development.",
     siteName: "Touhid Rahman Portfolio",
     images: [
       {
         url: "/img/Touhid_Rahman-01-AI.png",
         width: 500,
         height: 400,
-        alt: "Touhid Rahman — Expert Fullstack Developer",
+        alt: "Touhid Rahman — Fullstack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Touhid Rahman — Expert Fullstack Developer",
+    title: "Touhid Rahman — Fullstack Developer",
     description:
-      "Expert Fullstack Developer with 7+ years of experience in Angular, TypeScript, Node.js, AI integration, and cloud deployment.",
+      "Fullstack Developer with 8+ years of experience in TypeScript, Node.js, Angular, real-time systems, and AI-assisted development.",
     images: ["/img/Touhid_Rahman-01-AI.png"],
   },
   robots: {

@@ -62,12 +62,11 @@ export default function WorkProcess() {
               Work Process
             </h2>
             <p className="text-gray-600 text-sm">
-              With over 7 years of experience in frontend development and a
-              strong foundation in full-stack technologies, I follow a
-              structured approach to deliver high-quality solutions. My process
-              ensures thorough research, precise analysis, thoughtful design,
-              and seamless deployment—reflecting my expertise in Angular, state
-              management, and cloud technologies.
+              With over 8 years of experience in full-stack development, I
+              follow a structured approach to deliver high-quality solutions. My
+              process ensures thorough research, precise analysis, thoughtful
+              design, and seamless deployment—reflecting my expertise in
+              Angular, state management, and cloud technologies.
             </p>
             <p className="text-gray-600 mt-4 text-sm">
               From integrating AI tools to optimizing legacy code, I prioritize

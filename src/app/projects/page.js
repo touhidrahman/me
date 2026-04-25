@@ -5,9 +5,8 @@ import ProjectCard from "../../../components/projects/ProjectCard";
 export const metadata = {
   title: "Projects",
   description:
-    "Explore Touhid Rahman's portfolio of fullstack projects — from enterprise Angular applications to Node.js microservices and AI integrations.",
+    "Explore Touhid Rahman's selected SaaS, enterprise, and open-source full-stack projects.",
 };
-
 
 export default function ProjectsPage() {
   return (
@@ -19,8 +18,8 @@ export default function ProjectsPage() {
             My Projects
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-            A collection of web applications, backend services, and open-source
-            work built across 7+ years of professional development.
+            A collection of selected SaaS products, enterprise systems, and
+            open-source work built across 8+ years of professional development.
           </p>
         </div>
       </section>

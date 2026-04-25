@@ -11,7 +11,6 @@ const navLinks = [
   { label: "About", href: "/#about" },
   { label: "Projects", href: "/projects" },
   { label: "Experience", href: "/#experience" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export default function Header() {
@@ -35,7 +34,10 @@ export default function Header() {
         >
           T
         </Link>
-        <Link href="/" className="text-lg font-semibold hover:opacity-80 duration-200">
+        <Link
+          href="/"
+          className="text-lg font-semibold hover:opacity-80 duration-200"
+        >
           {personal.name}
         </Link>
       </div>
@@ -50,6 +52,14 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <a
+            href={personal.social.blog}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-secondary duration-300"
+          >
+            Blog
+          </a>
           <a
             href={personal.resumeUrl}
             target="_blank"
@@ -92,6 +102,15 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href={personal.social.blog}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-secondary duration-300 text-base"
+                onClick={closeMobileMenu}
+              >
+                Blog
+              </a>
               <a
                 href={personal.resumeUrl}
                 target="_blank"
