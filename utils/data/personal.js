@@ -11,7 +11,7 @@ export const personal = {
   phone: "(603) 858-8724",
   resumeUrl: "/files/Touhid-Rahman.pdf",
   stats: [
-    { label: "Experience", value: "8+ Y." },
+    { label: "Experience", value: "8+ Yrs" },
     { label: "Projects Completed", value: "25+" },
     { label: "Article Views", value: "100K+" },
   ],

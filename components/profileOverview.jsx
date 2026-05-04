@@ -16,6 +16,8 @@ export default function ProfileOverview() {
               alt="Touhid Rahman — Fullstack Developer"
               width={300}
               height={400}
+              loading="eager"
+              className="h-auto"
             />
           </section>
 

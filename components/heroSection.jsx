@@ -5,7 +5,7 @@ import { personal } from "../utils/data/personal";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col-reverse md:flex-row container-default pt-8 sm:pt-24 md:pt-32 bg-gradient-to-t from-white to-light">
+    <div className="flex flex-col-reverse md:flex-row container-default pt-8 sm:pt-24 md:pt-32">
       <div className="w-full md:w-1/2 md:flex md:flex-col justify-between">
         <section className="w-full">
           <h1 className="text-3xl sm:text-5xl xl:text-6xl font-inter font-medium">
