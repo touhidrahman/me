@@ -1,9 +1,10 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { FiDownload } from "react-icons/fi";
-import { personal } from "../utils/data/personal";
+"use client"
+import React from "react"
+import Image from "next/image"
+
+import Link from "next/link"
+import { FiDownload } from "react-icons/fi"
+import { personal } from "../utils/data/personal"
 
 export default function ProfileOverview() {
   return (
@@ -12,12 +13,12 @@ export default function ProfileOverview() {
         <div className="p-6 sm:p-10 md:p-16 flex flex-col md:flex-row md:items-center gap-6 sm:gap-10 md:gap-16">
           <section className="md:w-1/2">
             <Image
-              src="/img/Touhid-Rahman-02.png"
+              src="/img/Touhid_Rahman_03.jpeg"
               alt="Touhid Rahman — Fullstack Developer"
               width={300}
               height={400}
               loading="eager"
-              className="h-auto"
+              className="h-auto rounded-md shadow-lg object-cover object-top"
             />
           </section>
 
@@ -54,5 +55,5 @@ export default function ProfileOverview() {
         </div>
       </div>
     </div>
-  );
+  )
 }

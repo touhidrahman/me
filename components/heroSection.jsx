@@ -9,7 +9,10 @@ export default function HeroSection() {
       <div className="w-full md:w-1/2 md:flex md:flex-col justify-between">
         <section className="w-full">
           <h1 className="text-3xl sm:text-5xl xl:text-6xl font-inter font-medium">
-            Hello, I&apos;m {personal.name}
+            Hello, I&apos;m <br />
+            <span className="bg-linear-to-r from-secondary via-dark  to-secondary bg-clip-text text-transparent">
+              {personal.name}
+            </span>
           </h1>
 
           <p className="py-6 sm:py-8 text-xs md:text-sm font-inter font-normal text-gray-600 max-w-md">

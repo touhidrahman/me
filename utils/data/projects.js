@@ -19,7 +19,7 @@ export const projects = [
     liveUrl: "https://auth-demo.touhidrahman.me",
     image: null,
     category: "SaaS",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ export const projects = [
     liveUrl: "https://app.contenterp.com",
     image: null,
     category: "SaaS",
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -85,7 +85,7 @@ export const projects = [
     liveUrl: "https://www.npmjs.com/package/@touhidrahman/ngx-simple-store",
     image: null,
     category: "Open Source",
-    featured: true,
+    featured: false,
   },
   {
     id: 5,
@@ -107,7 +107,7 @@ export const projects = [
     liveUrl: "https://www.npmjs.com/package/@touhidrahman/simple-store",
     image: null,
     category: "Open Source",
-    featured: false,
+    featured: true,
   },
   {
     id: 6,
@@ -129,6 +129,6 @@ export const projects = [
     liveUrl: null,
     image: null,
     category: "Research",
-    featured: false,
+    featured: true,
   },
-];
+]

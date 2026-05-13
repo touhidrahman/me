@@ -1,6 +1,7 @@
-import React from "react";
-import { education, certifications } from "../utils/data/education";
-import { FaGraduationCap, FaCertificate } from "react-icons/fa";
+import React from "react"
+import { education, certifications } from "../utils/data/education"
+import { FaGraduationCap, FaCertificate } from "react-icons/fa"
+import Image from "next/image"
 
 export default function EducationSection() {
   return (
@@ -21,34 +22,62 @@ export default function EducationSection() {
             </div>
             <div className="space-y-6">
               {education.map((edu) => (
-                <div
+                //start here
+                <article
                   key={edu.id}
-                  className="bg-surface rounded-xl p-6 border-l-4 border-secondary"
+                  className="group rounded-xl bg-surface p-6 border-l-4 border-secondary  transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
                 >
-                  <h4 className="font-bold text-gray-900 mb-3">{edu.degree}</h4>
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                    <p className="text-secondary text-sm font-medium">
-                      {edu.institution}
-                    </p>
+                  <div className="flex items-start justify-between gap-5 mb-5">
+                    <div className="min-w-0">
+                      <h4 className="font-bold text-gray-900 leading-snug mb-2">
+                        {edu.degree}
+                      </h4>
+
+                      <p className="text-secondary text-sm font-medium">
+                        {edu.institution}
+                      </p>
+                    </div>
+
+                    {edu.logo && (
+                      <div className="shrink-0 flex h-16 w-16 items-center justify-center p-2">
+                        <Image
+                          src={edu.logo}
+                          alt={`${edu.institution} logo`}
+                          width={56}
+                          height={56}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-4">
+                    <span className="text-xs text-gray-500">
+                      {edu.location}
+                    </span>
+
                     <span className="text-xs text-gray-500">
                       {edu.duration}
                     </span>
                   </div>
-                  <p className="text-xs text-gray-500 mb-3">{edu.location}</p>
+
                   <p className="text-xs text-gray-600 leading-relaxed">
                     {edu.description}
                   </p>
+
                   {edu.link && (
                     <a
                       href={edu.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block mt-3 text-xs text-secondary hover:underline"
+                      className="inline-flex items-center mt-4 text-xs text-secondary font-medium hover:underline"
                     >
                       View research project
+                      <span className="ml-1">→</span>
                     </a>
                   )}
-                </div>
+                </article>
+                //end here
               ))}
             </div>
           </div>
@@ -100,5 +129,5 @@ export default function EducationSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

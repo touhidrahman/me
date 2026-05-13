@@ -3,6 +3,7 @@ export const education = [
     id: 1,
     degree: "MS Information Technology",
     institution: "Southern New Hampshire University",
+    logo: "/img/snhu-logo1.png",
     location: "New Hampshire, USA",
     duration: "2023",
     description: "Graduate studies in Information Technology.",
@@ -11,6 +12,7 @@ export const education = [
     id: 2,
     degree: "MS Global Software Development",
     institution: "Hochschule Fulda University of Applied Sciences",
+    logo: "/img/hsf-logo1.png",
     location: "Fulda, Germany",
     duration: "2018",
     description:
@@ -21,11 +23,12 @@ export const education = [
     id: 3,
     degree: "Diploma Computer Science",
     institution: "Bangladesh Institute of Management",
+    logo: "/img/bim-logo1.png",
     location: "Bangladesh",
     duration: "2014",
     description: "Computer Science diploma program.",
   },
-];
+]
 
 export const certifications = [
   {
@@ -44,7 +47,7 @@ export const certifications = [
   },
   {
     id: 3,
-    title: "Deutschlandstipendium (German Fellowship) Recipient",
+    title: "Deutschlandstipendium (German Fellowship) Recipient x2",
     issuer: "Award/Achievement",
     year: "2016, 2017",
     url: null,
@@ -60,22 +63,23 @@ export const certifications = [
     id: 5,
     title: "English Proficiency",
     issuer: "CEFR C1 / IELTS 7.5 (L8, R8, W7, S7)",
-    year: "Additional Info",
+    year: "",
     url: null,
   },
+
   {
     id: 6,
-    title: "Career Breaks",
-    issuer:
-      "Relocation and studies (2016-2017, 2022-2023), family commitments (2019), freelance and skill upgrade (09/2023-01/2024)",
-    year: "Additional Info",
-    url: null,
+    title: "Verified International Academic Qualifications",
+    issuer: "World Education Services (WES) ",
+    year: "2019",
+    url: "https://badges.wes.org/Evidence?i=01212924-4bb5-45c8-ab8f-b3de78af4709&type=ca",
   },
+
   {
     id: 7,
     title: "Fun Fact",
-    issuer: "Was a helicopter pilot before becoming a coder",
-    year: "Additional Info",
+    issuer: "I was a pilot before becoming a coder.",
+    year: "",
     url: null,
   },
-];
+]
