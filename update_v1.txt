@@ -1,0 +1,45 @@
+Website changes
+
+HERO SECTION
+===========
+1. Make my name different color/gradient and in a new line.
+2. Change 8+ Y. --> 8+ Yrs
+3. Change image
+
+
+TECHNOLOGIES & TOOLS
+====================
+Frontend: Javascript, Typescript, Angular, Vue.js, Tailwind, NgRx, RxJS, HTML5
+Backend: Node.js, Python, Express.js, Nest.js, Hono.js, Bun, PostgreSQL, MongoDB
+
+FEATURED PROJECTS
+===============
+Add few more projects:
+- Open source: @touhidrahman/simple-store (RxJS based state management library for any JS/TS application)
+- Open source: eyecatching
+
+PROFESSIONAL EXPERIENCE
+=======================
+Add acomodeo experience
+
+VOLUNTEER/INTERN EXPERIENCE
+========================
+Rename to --> Freelance & Contract Experience
+
+EDUCATION
+==========
+1. Add university logos if possible.
+
+ADDITIONAL INFO
+=================
+1. Remove career breaks section
+2. English proficiency: Remove the "Additional Info" label. Add a link to verified certificate online
+3. Fun fact: remove "Additional info" label. Change text to --> "I was a pilot before becoming a coder."
+4. Deutschlandstipendium: --> Deutschlandstipendium (German Fellowship) Recipient x2
+
+
+I AM IN THE NEWS (new section)
+==================
+1. https://osthessen-news.de/n11572670/ueberfuellter-fuerstensaal-studienanfanger-im-stadtschloss-begruesst.html
+2. https://www.hs-fulda.de/angewandte-informatik/meldungsdetails/detail/fuenf-informatik-studierende-erhalten-2017-ein-deutschlandstipendium-2
+3. https://www.dhakatribune.com/bangladesh/bangladesh-others/35192/boishakhi-tv-unilever-award-five-story-writers
